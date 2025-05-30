@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+.whatsapp img{
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    margin-top:  685px;
+    margin-left: 95%;
+    border-radius: 35px;
+    transition: transform .5s;
+}
+
+.msgbox img{
+    position: fixed;
+    height: 60px;
+    width: 60px;
+    margin-top:  605px;
+    margin-left: 94.5%;
+    border-radius: 35px;
+    transition: transform .5s;
+}
+
+.whatsapp img:hover{
+    transform: scale(1.1);
+}
+
+.msgbox img:hover{
+    transform: scale(1.1);
+}
+
+.a{
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+#navbar{
+    position: sticky;
+    top: 0;
+    background: whitesmoke;
+}
+
+nav{
+    padding: 20px;
+}
+
+ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding-bottom: 3px;
+    margin-right: 10px;
+    margin-left: 3%;
+    cursor: pointer;
+}
+
+ul li:after{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0%;
+    background-color: transparent;
+    transition: width 0.6s ease;
+}
+
+ul li:hover:after{
+    width: 100%;
+    background-color: black;
+}
+
+.login{
+    background-color: orangered;
+    padding: 10px;
+    width: 70px;
+    margin-left: 3%;
+    transition: 0.5s;
+}
+
+.login:hover{
+    transition: 0.5s;
+    transform: scaleX(1.1);
+}
+
+input{
+    width: 60%;
+    padding: 15px;
+    border-radius: 40px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.searchbar {
+  position: relative;
+  width: 300px;
+  margin: auto;
+}
+
+.searchbar input {
+  width: 100%;
+  padding: 10px 35px 10px 10px;
+  font-size: 1em;
+}
+
+.searchbar i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: gray;
+}
+
+
+.various-product{
+    margin-top: 5%;
+}
+
+.products{
+    padding-top: 25px;
+    width: 100%;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.product-card h5{
+    width: 300px;
+}
+
+.old-amt{
+    text-decoration: line-through;
+    padding-right: 15px;
+}
+
+.new-amt{
+    color: orange;
+    padding-left: 15px;
+}
+
+.perfume-type{
+    text-transform: uppercase;
+    font-family: cursive;
+}
+
+.product-card{
+    width: 300px;
+    height: auto;
+    border-style: solid;
+    border-radius: 20px;
+    justify-content: space-around;
+    transition: 0.5s;
+    color: black;
+    padding: 10px 10px 10px 10px ;
+    background-color: whitesmoke;
+    border-color: transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+}
+
+.product-card:hover{
+    transition: 0.5s;
+    transform: scale(1.055);
+}
+
+.product-card img{
+    width: 300px;
+}
+
+.Order{
+    background: orangered;
+    padding: 4%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-color: transparent;
+    width: 80%;
+    border-radius: 10px;
+    bottom: 0;
+}
+
+.Order:hover{
+    transition: 1s;
+    transform: scale(1.015);
+}
+
+.product-card1{    
+    width: 300px;
+    border-style: solid;
+    border-radius: 50%;
+    justify-content: space-around;
+    color: black;
+    padding: 0 20px 20px 10px;
+    border-color: transparent;
+    margin-top: 50px;
+}
+
+.product-card1 img:hover{
+    transition: 0.5s;
+    transform: scale(1.055);
+}
+
+.product-card1 img{
+    width: 300px;
+    transition: 0.5s;
+    border-radius: 50%;
+}
+
+.product-card1 h2{
+    width: 100%;
+}
+
+.move{
+    margin: 10px 0px 0px 0px;
+    animation: animate linear infinite 70s; 
+    animation-delay: 0s;
+    width:100000px;
+}
+.move_span{
+    font-size: 1.5rem;
+    padding-left: 60px;
+}
+@keyframes animate{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-10%);
+    }
+    
+}
+
+.g{
+    width: 100%;
+    padding: 4%;
+    display: inline-block;
+    width: 15%;
+}
+
+.g1{
+    padding-top: 7%;
+}
+
+.rating{
+    margin: 10px;
+}
