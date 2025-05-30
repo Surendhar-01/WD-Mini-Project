@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.brand{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 15px;
+    cursor: pointer;
+    color: ivory;
+    margin: 5%;
+}
+
+.alpha1{
+    list-style-type: none;
+    padding-left: 5%;
+    font-style: bold;
+}
+
+li{
+    padding: 4%;
+}
