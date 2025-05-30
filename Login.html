@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #2b5876, #4e4376);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: #333;
+    }
+
+    .login-card {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 2.5rem;
+      border-radius: 15px;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .login-card h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #2c3e50;
+    }
+
+    .form-group {
+      position: relative;
+      margin-bottom: 1.8rem;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 1rem 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      background: none;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+
+    .form-group label {
+      position: absolute;
+      top: 1rem;
+      left: 0.75rem;
+      color: #888;
+      pointer-events: none;
+      transition: all 0.3s ease;
+      background: white;
+      padding: 0 4px;
+    }
+
+    .form-group input:focus + label,
+    .form-group input:not(:placeholder-shown) + label {
+      top: -0.6rem;
+      font-size: 0.75rem;
+      color: #007BFF;
+    }
+
+    .form-group .toggle-password {
+      position: absolute;
+      top: 50%;
+      right: 0.75rem;
+      transform: translateY(-50%);
+      cursor: pointer;
+      font-size: 0.9rem;
+      color: #007BFF;
+      background: none;
+      border: none;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 0.9rem;
+      font-size: 1rem;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .login-btn:hover {
+      background-color: #0056b3;
+    }
+
+    .error-message {
+      color: red;
+      font-size: 0.85rem;
+      margin-top: 0.3rem;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-card">
+    <h2>Welcome Back</h2>
+    <form id="loginForm">
+      <div class="form-group">
+        <input type="email" id="email" required placeholder=" " />
+        <label for="email">Email Address</label>
+        <div id="emailError" class="error-message">Invalid email address.</div>
+      </div>
+
+      <div class="form-group">
+        <input type="password" id="password" required placeholder=" " />
+        <label for="password">Password</label>
+        <button type="button" class="toggle-password" onclick="togglePassword()">Show</button>
+        <div id="passwordError" class="error-message">Password must be at least 6 characters.</div>
+      </div>
+
+      <button type="submit" class="login-btn">Log In</button>
+    </form>
+  </div>
+
+  <script>
+    function togglePassword() {
+      const password = document.getElementById("password");
+      const toggleBtn = document.querySelector(".toggle-password");
+      const isPassword = password.type === "password";
+      password.type = isPassword ? "text" : "password";
+      toggleBtn.textContent = isPassword ? "Hide" : "Show";
+    }
+
+    document.getElementById("loginForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const email = document.getElementById("email").value.trim();
+      const password = document.getElementById("password").value.trim();
+      const emailError = document.getElementById("emailError");
+      const passwordError = document.getElementById("passwordError");
+
+      let valid = true;
+
+      emailError.style.display = "none";
+      passwordError.style.display = "none";
+
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        emailError.style.display = "block";
+        valid = false;
+      }
+
+      if (password.length < 6) {
+        passwordError.style.display = "block";
+        valid = false;
+      }
+
+      if (valid) {
+        alert("Login successful!");
+        window.location.href="home-page.html";
+      }
+    });
+  </script>
+
+</body>
+</html>
