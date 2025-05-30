@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<head>
+    <title>Women's Perfume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="For-Women.css">
+</head>
+<body>
+    <div class="msgbox">
+        <img src="message.png">
+    </div>
+    <div class="whatsapp">
+        <img src="whatsapp logo.jpg">
+    </div>
+    <div>
+        <h3 class="a"><marquee>"Flat 300"-rupee 300 off on minimum purchase of 6000</marquee></h3>
+    </div>
+    <div>
+        <nav>
+            <ul style="margin-left: 90%;">
+                <a style="color: black;" href="https://www.instagram.com/reel/DFxUN4nNsNi/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                <a style="color: black;" href="https://www.facebook.com/perfumepalaceonlinestore"><i style="margin-left: 0.3%;" class="fa-brands fa-facebook"></i></a>
+                <a style="color: black;" href="https://www.youtube.com/@perfumepalaceindia"><i style="margin-left: 0.3%;" class="fa-brands fa-youtube"></i></a>
+            </ul>
+        </nav>
+        <hr>
+    </div>
+    
+    <div id="navbar">
+        <nav>
+            <ul>
+                <li style="margin-left: 10%;"><a style="color:black;text-decoration: none;" href="home-page.html">H O M E</a></li>
+                <li><a style="color: black;text-decoration: none;" href="For-Men.html">F O R  M E N</a></li>
+                <li><a style="color: black;text-decoration: none;" href="For Women.html">F O R  W O M E N</a></li>
+                <li><a style="color: black;text-decoration: none;" href="brands.html">B R A N D S</a></li>
+                <img src="perfumy logo.jpeg" style="width: 80px;margin-left: 3%; margin-right: 3%;">
+                <li>N E W</li>
+                <li>S A L E</li>
+                <li>D E C A N T S / S A M P L E</li>
+                <li><i style="margin-left: 3%;" class="fa-regular fa-user"></i></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <!--Availability-->
+            <div class="title" onclick="toggleSection(this)">
+                <span>AVAILABILITY</span>
+                <span class="arrow">&#9650;</span>
+            </div>
+                <div class="options">
+                    <label class="option"> 
+                        <input type="checkbox">  In stock (276)</label>
+                    <label class="option">
+                        <input type="checkbox">  Out of stock (124)</label>
+                </div>
+        </div>
+        <hr>
+        <!--Price-->
+        <div class="section">
+                <div class="title" onclick="toggleSection(this)">
+                    <span>Price</span>
+                    <span class="arrow">&#9650;</span>
+                </div>
+                <div class="options">
+                    <div class="slider-labels">
+                        <span id="minPrice">Rs 0.00</span>
+                        <span>Rs 11,899.00</span>
+                    </div>
+                    <input type="range" min="0" max="11899" value="0" oninput="document.getElementById('minPrice') .textConyent = 'Rs.' +this.value+ '.00'">
+                    <input type="range" min="0" max="11899" value="11899">
+                </div>
+        </div>
+        <hr>
+        <!--Size-->
+        <div class="section">
+            <div class="title" onclick="toggleSection(this)">
+                <span>Size</span>
+                <span class="arrow">&#9650;</span>
+            </div>
+            <div class="options">
+                <label class="option">
+                    <input type="checkbox">  30ml (2)</label>
+                <dlabel class="option">
+                    <input type="checkbox">  100ml (2)</dlabel>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleSection(titleElement){
+            const arrow=titleElement.querySelector('.arrow');
+            const options=titleElement.nextElementSibling;
+
+            arrow.classList.toggle('collapsed');
+            options.style.display = options.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+    
+    <img src="offer1.jpg" width="600px" height="400px" style="margin-left: 15%;margin-top: 10px">
+    
+    <div style="width: 100%;margin-left: 7%;" class="e">
+        <div class="e1">
+            <h3 style="display: inline-block;">398 products</h3>
+            <select class="e2">
+                <option>Best Selling</option>
+                <option>Featured</option>
+                <option>Sort</option>
+                <option>Alphabetical,A-Z</option>
+                <option>Alphabetical,Z-A</option>
+                <option>Price,low to high</option>
+                <option>Price,high to low</option>
+                <option>Date,old to new</option>
+                <option>Date,new to old</option>
+            </select>
+        </div>
+    </div>
+
+    <center>
+    
+        <div class="products">
+            <div class="box">
+                <img src="21.png">
+                <p class="perfume-type">Lattafa Khamrah Eau De Parfum 100ml For Men & Women</p>
+                <h5>
+                    <span class="old-amt">Rs. 4,500.00</span>
+                    <span>Rs. 2,646,00</span>
+                    <span class="new-amt">Save Rs. 1,851.00</span>
+                </h5>
+                <button class="Order">Order This</button>
+            </div>
+            <div class="box">
+                <img src="22.png">
+                <p class="perfume-type">Lattafa Asad Eau De Parfum 100ml For Men & Women</p>
+                <h5>
+                    <span class="old-amt">Rs. 3,500.00</span>
+                    <span>Rs. 1,949.00</span>
+                    <span class="new-amt">Save Rs. 1,551.00</span>
+                </h5>
+                <button class="Order">Order This</button>
+            </div>
+            <div class="box">
+                <img src="23.png">
+                <p class="perfume-type">Lattafa Fakhar Eau De Parfum For Men 100ml</p>
+                <h5>
+                    <span class="old-amt">Rs. 3,500.00</span>
+                    <span>Rs. 2,149.00</span>
+                    <span class="new-amt">Save Rs. 1,351.00</span>
+                </h5>
+                <button class="Order">Order This</button>
+            </div>
+            <div class="box">
+                <img src="24.png">
+                <p class="perfume-type">Afnan 9pm Eau De Parfum for Men 100ml</p>
+                <h5>
+                    <span class="old-amt">Rs. 4,900.00</span>
+                    <span>Rs. 2,799.00</span>
+                    <span class="new-amt">Save Rs. 2,101.00</span>
+                </h5>
+                <button class="Order">Order This</button>
+            </div>
+            <div class="box">
+                <img src="25.png">
+                <p class="perfume-type">Lattafa Yara Eau De Parfum 100ml For Women</p>
+                <h5>
+                    <span class="old-amt">Rs. 3,500.00</span>
+                    <span>Rs. 1,999.00</span>
+                    <span class="new-amt">Save Rs. 1,501.00</span>
+                </h5>
+                <button class="Order">Order This</button>
+            </div>
+            <div class="box">
+                <img src="26.png">
+                <p class="perfume-type">Decant/Sample Lattafa Khamrah Eau De Parfum 10ml For Men & Women</p>
+                <h5>
+                    <span>Rs. 499.00</span>
+                </h5>
+                <button class="Order">Order This</button>
+            </div>
+            <div class="box">
+                <img src="27.png">
+                <p class="perfume-type">Lattafa Oud For Glory Bade'e Al Oud Eau De Parfum 100ml For Men & Women</p>
+                <h5>
+                    <span class="old-amt">Rs. 2,999.00</span>
+                    <span>Rs. 2,149.00</span>
+                    <span class="new-amt">Save Rs. 850.00</span>
+                </h5>
+                <button class="Order">Order This</button>
+            </div>
+            <div class="box">
+                <img src="28.png">
+                <p class="perfume-type">Lattafa Ramz Silver Eau De Parfum 100ml For Men & Women</p>
+                <h5>
+                    <span class="old-amt">Rs. 2,200.00</span>
+                    <span>Rs. 1,548.00</span>
+                    <span class="new-amt">Save Rs. 652.00</span>
+                </h5>
+                <button class="Order">Order This</button>
+            </div>
+            <div class="box">
+                <img src="29.png">
+                <p class="perfume-type">Lattafa Najdia Eau De Parfum 100ml For Men & Women</p>
+                <h5>
+                    <span class="old-amt">Rs. 2,000.00</span>
+                    <span>Rs. 1,599.00</span>
+                    <span class="new-amt">Save Rs. 401.00</span>
+                </h5>
+                <button class="Order">Order This</button>
+            </div>
+            <div class="box">
+                <img src="30.png">
+                <p class="perfume-type">Lattafa Ameer Al Oudh Intense Oud Eau de Parfum 100ml For Men & Women</p>
+                <h5>
+                    <span class="old-amt">Rs. 2,500.00</span>
+                    <span>Rs. 1,649.00</span>
+                    <span class="new-amt">Save Rs. 581.00</span>
+                </h5>
+                <button class="Order">Order This</button>
+            </div>
+            <div class="box">
+                <img src="31.png">
+                <p class="perfume-type">Decant/Sample Afnan 9pm Eau De Parfum for Men 10ml</p>
+                <h5>
+                    <span>Rs. 399.00</span>
+                </h5>
+                <button class="Order">Order This</button>
+            </div>
+            <div class="box">
+                <img src="32.png">
+                <p class="perfume-type">Woody Oud by Maison Alhambra Eau De Parfum 80ml For Men & Women</p>
+                <h5>
+                    <span class="old-amt">Rs. 2,500.00</span>
+                    <span>Rs. 1,649.00</span>
+                    <span class="new-amt">Save Rs. 581.00</span>
+                </h5>
+                <button class="Order">Order This</button>
+            </div>
+            <div class="box">
+                <img src="33.png">
+                <p class="perfume-type">Rasasi Hawas Eau de Parfum 100ml For Men</p>
+                <h5>
+                    <span class="old-amt">Rs. 6,500.00</span>
+                    <span>Rs. 3,249.00</span>
+                    <span class="new-amt">Save Rs. 3,251.00</span>
+                </h5>
+                <button class="Order">Order This</button>
+            </div>
+            <div class="box">
+                <img src="34.png">
+                <p class="perfume-type">Decant/Sample Of Lattafa Yara Eau De Parfum 10ml For Women</p>
+                <h5>
+                    <span>Rs. 399.00</span>
+                </h5>
+                <button class="Order">Order This</button>
+            </div>
+            <div class="box">
+                <img src="35.png">
+                <p class="perfume-type">Ard Al Zaafaran AL Dirgham Eau de Parfum 100 ml For Men and Women</p>
+                <h5>
+                    <span class="old-amt">Rs. 2,000.00</span>
+                    <span>Rs. 1,599.00</span>
+                    <span class="new-amt">Save Rs. 401.00</span>
+                </h5>
+                <button class="Order">Order This</button>
+            </div>
+            <div class="box">
+                <img src="36.png">
+                <p class="perfume-type">Rave Now By Lattafa Eau De Parfum 100ml For Men</p>
+                <h5>
+                    <span class="old-amt">Rs. 2,500.00</span>
+                    <span>Rs. 1,799.00</span>
+                    <span class="new-amt">Save Rs. 701.00</span>
+                </h5>
+                <button class="Order">Order This</button>
+            </div>
+            <div class="box">
+                <img src="1.png">
+                <p class="perfume-type">Lattafa Rooh Al Rooh Silver Eau De Parfum 100ml For Men & Women</p>
+                <h5>
+                    <span class="old-amt">Rs. 2,500.00 </span>
+                    <span>Rs. 1,949.00 </span>
+                    <span class="new-amt">Save Rs. 551.00</span>
+                </h5>
+                <button class="Order">Order This</button>
+            </div>
+            <div class="box">
+                <img src="2.png">
+                <p class="perfume-type">Lattafa Rooh Al Rooh Silver Eau De Parfum 100ml For Men & Women</p>
+                <h5>
+                    <span class="old-amt">Rs. 4000.00</span>
+                    <span>Rs. 3,449.00 </span>
+                    <span class="new-amt">Save Rs. 551.00</span>
+                </h5>
+                <button class="Order">Order This</button>
+            </div>
+            <div class="box">
+                <img src="3.png">
+                <p class="perfume-type">Royal Mirage Platinum Eau De Cologne 120ml For Men</p>
+                <h5>
+                    <span class="old-amt">Rs 1,599.00 </span>
+                    <span>Rs. 1,249.00 </span>
+                    <span class="new-amt">Save Rs. 350.00</span>
+                </h5>
+                <button class="Order">Order This</button>
+            </div>
+            <div class="box">
+                <img src="4.png">
+                <p class="perfume-type">Without Box Of Maison Alhambra Zaffiro Collection Regale Eau De Parfum 100ml For Men & Women</p>
+                <h5>
+                    <span class="old-amt">Rs. 2,499.00 </span>
+                    <span>Rs. 1,949.00 </span>
+                    <span class="new-amt">Save Rs. 550.00</span>
+                </h5>
+                <button class="Order">Order This</button>
+            </div>
+            <div class="box">
+                <img src="5.png">
+                <p class="perfume-type">Without Box of Khadlaj Hareem Al Sultan Gold Concentrated Perfume Oil 35ml For Men & Women</p>
+                <h5>
+                    <span class="old-amt">Rs. 1,999.00 </span>
+                    <span>priceRs. 1,949.00 </span>
+                    <span class="new-amt">Save Rs. 50.00</span>
+                </h5>
+                <button class="Order">Order This</button>
+            </div>
+            <div class="box">
+                <img src="6.png">
+                <p class="perfume-type">Without Box Of Fragrance World French Avenue Pinnace Oryn Eau De Parfum 100ml For Men</p>
+                <h5>
+                    <span class="old-amt">Rs. 3,999.00 </span>
+                    <span>Rs. 3,199.00 </span>
+                    <span class="new-amt">Save Rs. 800.00</span>
+                </h5>
+                <button class="Order">Order This</button>
+            </div>
+            <div class="box">
+                <img src="7.png">
+                <p class="perfume-type">Decant/Sample of Paris Corner Taskeen Marina Eau De Parfum 10ml For Men & Women</p>
+                <h5>
+                    <span>Rs. 359.00 </span>
+                </h5>
+                <button class="Order">Order This</button>
+            </div>
+            <div class="box">
+                <img src="8.png">
+                <p class="perfume-type">Without Box Of Maison Alhambra Narissa Rouge Eau De Parfum 100ml For Men & Women</p>
+                <h5>
+                    <span class="old-amt">Rs. 2,200.00 </span>
+                    <span>Rs. 1,399.00 </span>
+                    <span class="new-amt">Save Rs. 801.00</span>
+                </h5>
+                <button class="Order">Order This</button>
+            </div>
+            <div class="box">
+                <img src="9.png">
+                <p class="perfume-type">Fragrance World French Avenue Essence De Blanc Eau De Parfum 100ml For Men & Women</p>
+                <h5>
+                    <span class="old-amt">Rs. 2,999.00 </span>
+                    <span>Rs. 2,399.00 </span>
+                    <span class="new-amt">Save Rs. 600.00</span>
+                </h5>
+                <button class="Order">Order This</button>
+            </div>
+            <div class="box">
+                <img src="10.png">
+                <p class="perfume-type">Armaf Yum Yum Eau De Parfum 100ml For Women</p>
+                <h5>
+                    <span class="old-amt">Rs. 6,500.00 </span>
+                    <span>Rs. 3,990.00 </span>
+                    <span class="new-amt">Save Rs. 2,150.00</span>
+                </h5>
+                <button class="Order">Order This</button>
+            </div>
+            <div class="box">
+                <img src="11.png">
+                <p class="perfume-type">Decant/Sample Of Rasasi Hawas Eclat Eau De Parfum 10ml For Women</p>
+                <h5>
+                    <span>Rs. 595.00 </span>
+                </h5>
+                <button class="Order">Order This</button>
+            </div>
+            <div class="box">
+                <img src="12.png">
+                <p class="perfume-type">Decant/Sample Of Rasasi Hawas Fire Eau De Parfum 10ml For Man</p>
+                <h5>
+                    <span>Rs. 649.00 </span>
+                </h5>
+                <button class="Order">Order This</button>
+            </div>
+        </div>
+        
+        <button style="margin-top: 3%;padding: 1%;width: 10%;background: black;color: white;">V I E W   A L L </button>
+        
+    </center>
+    
+    <div style="margin-top: 4%;background-color: black;color: white;"">
+        <div class="g">
+            <h2 class="g1">Q u i c k  m e n u</h2>               
+            <h4 class="g1">Blogs</h4>
+            <h4 class="g1">About Us</h4>
+            <h4 class="g1">Customer Support</h4>
+            <h4 class="g1">International Shipping</h4>
+            <h4 class="g1">Terms of Service</h4>
+            <h4 class="g1">Refund policy</h4>
+            <h4 class="g1">Shipping Policy</h4>
+            <h4 class="g1">Privacy Policy</h4>
+            <h4 class="g1">Track Order</h4>
+        </div>
+        <div class="g">
+            <h2 class="g1">T O P  B R A N D S</h2>
+            <h4 class="g1">Afnan</h4>
+            <h4 class="g1">Ajmal</h4>
+            <h4 class="g1">Ard Al Zaafaran</h4>
+            <h4 class="g1">Armaf</h4>
+            <h4 class="g1">Azzaro</h4>
+            <h4 class="g1">Lattafa</h4>
+            <h4 class="g1">Rasasi</h4>
+            <h4 class="g1">Maison Alhambra</h4>
+            <h4 class="g1">Sitemap</h4>
+        </div>
+        <div class="g">
+            <h2 class="g1">C A T E G O R I E S</h2>                
+            <h4 class="j">Perfumes</h4>
+            <h4 class="g1">Gift Sets</h4>
+            <h4 class="g1">Fragrance Mists</h4>
+            <h4 class="g1">Deodorants</h4>
+            <h4 class="g1">Deodorant Stick</h4>
+            <h4 class="g1">After Shaves</h4>
+            <h4 class="g1">Shower Gels</h4>
+            <h4 class="g1">Body Lotion</h4>
+            <h4 class="g1" style="color: black;"> .</h4>
+        </div>
+        <div class="g">
+            <h2 class="g1">SIGN UP AND SAVE</h2>
+            <h4 class="g1">Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</h4>
+            <p class="g1">
+                <u style="color: white;"><input style="background-color: black;color: white;padding: 2%;" type="email" placeholder="Enter your email"></u>
+            </p>
+            <div class="g1">
+                <a style="color: white;" href="https://www.instagram.com/reel/DFxUN4nNsNi/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                <a style="color: white;" href="https://www.facebook.com/perfumepalaceonlinestore"><i style="margin-left: 3.3%;" class="fa-brands fa-facebook"></i></a>
+                <a style="color: white;" href="https://www.youtube.com/@perfumepalaceindia"><i style="margin-left: 3.3%;" class="fa-brands fa-youtube"></i></a>
+            </div>
+            <h4 class="g1" style="color: black;"> .</h4>
+            <h4 class="g1" style="color: black;"> .</h4>
+            <h4 class="g1" style="color: black;"> .</h4>
+            <h4 class="g1" style="color: black;"> .</h4>
+        </div>
+        <div style="padding-left: 5%;padding-bottom: 5%;padding-right: 5%;">
+            <img style="width: 10%;" src="perfumy logo.jpeg">
+            <center><h5> &COPY; 2025 perfume palace</h5></center>
+        </div>
+    </div>
+</body>
+</html>
