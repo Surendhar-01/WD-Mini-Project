@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Order Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2em;
+      max-width: 600px;
+      margin: auto;
+      background: #f5f5f5;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 1em;
+    }
+    form {
+      background: white;
+      padding: 2em;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #ccc;
+    }
+    label {
+      display: block;
+      margin: 1em 0 0.5em;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.5em;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+    button {
+      margin-top: 1.5em;
+      background-color: black;
+      color: white;
+      padding: 0.75em 1.5em;
+      border: none;
+      border-radius: 4px;
+      font-size: 1.1em;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Place Your Order</h1>
+  <form action="submit_order.php" method="POST">
+    <label for="product">Product Name:</label>
+    <input type="text" id="product" name="product" placeholder="Enter product name" required />
+
+    <label for="name">Your Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Your name" required />
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="+91 9876543210" required />
+
+    <label for="address">Shipping Address:</label>
+    <textarea id="address" name="address" rows="3" placeholder="Your address" required></textarea>
+
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" value="1" min="1" required />
+
+    <button type="submit">Submit Order</button>
+  </form>
+</body>
+</html>
+<script>
+  document.querySelector('form').addEventListener('submit', function(event) {
+    const productInput = document.getElementById('product');
+    const productName = productInput.value.trim();
+
+    if (productName.length < 2) {
+      alert('Please enter a valid product name with at least 2 characters.');
+      productInput.focus();
+      event.preventDefault(); 
+      return false;
+    }
+
+    const validPattern = /^[a-zA-Z0-9\s\-_,\.;:()]+$/;
+    if (!validPattern.test(productName)) {
+      alert('Product name contains invalid characters.');
+      productInput.focus();
+      event.preventDefault();
+      return false;
+    }
+
+  });
+</script>
